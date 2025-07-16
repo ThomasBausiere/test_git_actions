@@ -1,0 +1,14 @@
+name: workflow qui se délcenche lors de la creation d'un fork
+
+on:
+  fork:
+
+jobs:
+  fork-message:
+    runs-on: ubuntu-latest
+    env:
+      MESSAGE: "Merci d'avoir forké ce projet ! 🎉"
+
+    steps:
+      - name: Afficher un message
+        run: echo "$MESSAGE"
