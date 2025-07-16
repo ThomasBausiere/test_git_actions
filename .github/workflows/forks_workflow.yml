@@ -7,7 +7,7 @@ jobs:
   fork-message:
     runs-on: ubuntu-latest
     env:
-      MESSAGE: "Merci d'avoir forké ce projet ! 🎉"
+      MESSAGE: "Merci d'avoir forké ce projet ! "
 
     steps:
       - name: Afficher un message
