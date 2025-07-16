@@ -2,12 +2,13 @@ name: Message issue
 
 on:
   issues:
-    types: [opened]
+    types: opened
 
 jobs:
   greet-author:
     runs-on: ubuntu-latest
-
+    permissions:
+        issues: write
     steps:
       - name: Envoyer un message personnalisé à l'auteur d'une déclaration d'issue
         env:
